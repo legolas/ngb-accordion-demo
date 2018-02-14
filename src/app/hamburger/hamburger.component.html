@@ -19,12 +19,19 @@
     </div>
 </nav>
 -->
+<!--<nav class="navbar navbar-light bg-faded">-->
 <nav class="navbar navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+    <a href="/"
+       class="navbar-brand">Hamburger menu demo</a>
+    <button class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsingNavbar2"
+            (click)="isCollapsed = !isCollapsed">
         <span class="navbar-toggler-icon my-toggler"></span>
     </button>
-    <a href="/" class="navbar-brand">Light</a>
-    <div class="navbar-collapse collapse" id="collapsingNavbar2">
+    <div class="navbar-collapse collapse"
+         id="collapsingNavbar2">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Link 1</a>
