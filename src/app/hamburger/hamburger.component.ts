@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hamburger',
-  templateUrl: './hamburger.component.html',
-  styleUrls: ['./hamburger.component.css']
+    selector: 'app-hamburger',
+    templateUrl: './hamburger.component.html',
+    styleUrls: ['./hamburger.component.css']
 })
 export class HamburgerComponent implements OnInit {
 
-  constructor() { }
+    isCollapsed: boolean;
 
-  ngOnInit() {
-  }
+    constructor() {
+        this.isCollapsed = true;
+    }
+
+    ngOnInit() {
+    }
 
 }
